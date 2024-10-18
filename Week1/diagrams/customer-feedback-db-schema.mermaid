@@ -1,0 +1,49 @@
+erDiagram
+    Customers ||--o{ Feedback : "provides"
+    Products ||--o{ Feedback : "receives"
+    FeedbackCategories ||--o{ Feedback : "categorizes"
+    StagingFeedback }|..|{ Customers : "populates"
+    StagingFeedback }|..|{ Products : "populates"
+    StagingFeedback }|..|{ Feedback : "populates"
+
+    Customers {
+        int CustomerID PK
+        string ReviewerID
+        string ReviewerName
+    }
+
+    Products {
+        int ProductID PK
+        string ASIN
+    }
+
+    FeedbackCategories {
+        int CategoryID PK
+        string CategoryName
+    }
+
+    Feedback {
+        int FeedbackID PK
+        int CustomerID FK
+        int ProductID FK
+        int CategoryID FK
+        decimal Rating
+        string ReviewText
+        string Summary
+        datetime ReviewTime
+        boolean Verified
+        int VoteCount
+    }
+
+    StagingFeedback {
+        float overall
+        int vote
+        boolean verified
+        string reviewTime
+        string reviewerID
+        string asin
+        string style
+        string reviewerName
+        string reviewText
+        string summary
+    }

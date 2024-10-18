@@ -1,0 +1,28 @@
+11285465 rows or reviews
+9 mil
+6 mil
+3 mil
+1.5 mil
+
+
+Final Five Categories:
+
+    Clothing, Shoes, and Jewelry (11,285,464 reviews)
+    Electronics (6,739,590 reviews)
+    Home and Kitchen (6,898,955 reviews)
+    Sports and Outdoors (2,839,940 reviews)
+    Pet Supplies (2,098,325 reviews)
+
+where
+
+    reviewerID - ID of the reviewer, e.g. A2SUAM1J3GNN3B
+    asin - ID of the product, e.g. 0000013714
+    reviewerName - name of the reviewer
+    vote - helpful votes of the review
+    style - a disctionary of the product metadata, e.g., "Format" is "Hardcover"
+    reviewText - text of the review
+    overall - rating of the product
+    summary - summary of the review
+    unixReviewTime - time of the review (unix time)
+    reviewTime - time of the review (raw)
+    image - images that users post after they have received the product
